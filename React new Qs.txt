@@ -1,0 +1,88 @@
+// 1 In react we can create our own elemt by below code
+
+ const header= React.createElement("h1",{id:"heading"},"Hello")
+ It will create a object, 
+const root= REACTDOM.createRoot(getElemtbyId("root"));=> It ll get div that has id root and inside it will render all things
+ root.render(header)
+ and when root.render happens it will create a following html code
+ <h1 id="heading">Hello</> 
+
+
+// 2. If <div id="root">
+ <div id="hello">Hello</div>
+ <div id="hello">Hello</div>
+ <div id="hello">Hello</div>
+ <div id="hello">Hello</div>
+ <div>
+
+And we create our own element in js using react and render it
+
+const header= React.createElement("h1",{id:"heading"},"Hello World")
+ const root= REACTDOM.createRoot(getElemtbyId("root"));
+ root.render(header)
+ and when root.render happens it will create a following html code
+<h1 id="heading">Hello</>
+
+The above html code will overide the existing html code in <div id="root">. And it will get overided by
+
+ <div id="root">
+ <div id="heading">Hello World</div>
+ <div>
+
+ //3. 
+ If we want to create multiple child under root
+ then
+
+ const header1= React.createElement("h1",{id:"heading1"},"Heading 1");
+  const header2= React.createElement("h2",{id:"heading2"},"Heading 2");
+    const container= React.createElement("div",{id:"container"},[header1,header2]); // we can give multiple things in array
+  const root= REACTDOM.createRoot(getElemtbyId("root"));
+   root.render(container);
+
+   Then it will create this under root
+
+   <div id="container">
+   <h1 id="heading1">Heading 1</h1>
+     <h2 id="heading2">Heading 2</h2>
+   </div>
+
+
+
+
+//4.
+
+
+const obj={
+    fun:function(){
+        console.log(this); // it will obj
+    }
+
+    fun1:()=>{
+        console.log(this);
+    }
+}
+
+obj.fun()// in it "this" refers to obj
+obj.fun1()// in it, this refers to window object as it is arrow function
+
+//5.
+
+function x(){
+console.log(this) ; // this refers to window object
+}
+
+x();
+
+
+//6
+const obj={name:"Raghav"};
+
+function x(){
+    console.log(this);
+}
+
+x.call(obj) // in it, this referes to obj.
+x.call(this)// here this refers to window object.
+x.call() // here also this will be window object
+
+// Basically value of this will depend on how the function is called.
