@@ -1,0 +1,17 @@
+1. npm init will create package.json.
+2. React is a library
+3. we use npm to add package to our project.
+4. Major.Minor.Patch
+~(tild) for patch version
+^ (caret) for minor version
+
+5. react lib used to get feature of react and recat-dom to manipulate the dom in broswer.
+
+6. Parcel has HMR(HOT Module Replacement) that gives us instant changes on UI when we make change in code. It use File Watcher algo, to do HMR.
+That algo keeps the track of all files and hit reload when it find the changes.
+
+7. dist folder contains the minified version of code. For build it is required.
+
+8. Transitive dependency- If one of the package that we are using has dependency on another package, we say that dependency as Transitive dependency
+
+9. broswerlist is the package that we can use to support our app in old versions of browsers.

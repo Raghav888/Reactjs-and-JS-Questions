@@ -35,9 +35,9 @@ The above html code will overide the existing html code in <div id="root">. And 
 
  const header1= React.createElement("h1",{id:"heading1"},"Heading 1");
   const header2= React.createElement("h2",{id:"heading2"},"Heading 2");
-    const container= React.createElement("div",{id:"container"},[header1,header2]); // we can give multiple things in array
+  const container= React.createElement("div",{id:"container"},[header1,header2]); // we can give multiple things in array
   const root= REACTDOM.createRoot(getElemtbyId("root"));
-   root.render(container);
+  root.render(container);
 
    Then it will create this under root
 
@@ -86,3 +86,6 @@ x.call(this)// here this refers to window object.
 x.call() // here also this will be window object
 
 // Basically value of this will depend on how the function is called.
+
+//7.
+Package-lock.json will give exact lib version & to be used on production.
