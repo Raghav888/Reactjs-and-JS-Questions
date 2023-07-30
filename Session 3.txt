@@ -1,0 +1,7 @@
+1. Tree shaking means removing unwanted code.
+That can be unused functions that we get from librray.
+
+2. How JSX works? JSX uses React.createElement, then that gives object and that genrates HTML code in DOM.
+Babel converts JSX to React.createElement
+
+3. {} and  {{}} in jsx. first {} says content inside it is js and second {{}} says it contains object.
