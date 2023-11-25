@@ -21,4 +21,30 @@ Babel converts JSX to React.createElement
   Ex: Some offers are avaiable in few locations, so to people accessing website in that location, will be able to see offers, as BE will second
   data that ll contain offer details, while in other location as offers are not present, so BE wont send any offer data, so on UI no such offers will be shown.
 
+  8. We can send props to child component by destruction also
+  ex:
+  const obj={name:"Raghav", age:"23"}
+
+  <Child {...obj} />
+
+  It is same as <Child obj={obj}>
+
+  And in Child component
+
+  export const Child=({name,age})=>{}
+
+Reonciliation- The algorithm React uses to diff one tree with another to determine which parts need to be changed.
+
+The reconciler does the work of computing which parts of a tree have changed; the renderer then uses that information to actually update the rendered app.
+
+  9. React Fiber -> In React 16, it was introduced. Its a new Reconciliation engine 
   
+  React Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to
+
+pause work and come back to it later.
+assign priority to different types of work.
+reuse previously completed work.
+abort work if it's no longer needed.
+
+Fiber is reimplementation of the stack, specialized for React components. You can think of a single fiber as a virtual stack frame
+https://github.com/acdlite/react-fiber-architecture
