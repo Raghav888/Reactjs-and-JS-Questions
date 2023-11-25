@@ -5,3 +5,20 @@ That can be unused functions that we get from librray.
 Babel converts JSX to React.createElement
 
 3. {} and  {{}} in jsx. first {} says content inside it is js and second {{}} says it contains object.
+
+4. Component can be called in 3 ways
+  - <component/>
+  - {component()}
+  - <component>
+  <child1/>
+  <child2/>
+  <component/> This is used when that component will have child components.
+
+  5.  JSX can have only ne parent
+  6. React.Fragments -> <></>
+
+  7. Config driven UI: Based on BE response, the UI will show data. Having if conditions in UI, which check BE response and show data to user
+  Ex: Some offers are avaiable in few locations, so to people accessing website in that location, will be able to see offers, as BE will second
+  data that ll contain offer details, while in other location as offers are not present, so BE wont send any offer data, so on UI no such offers will be shown.
+
+  
