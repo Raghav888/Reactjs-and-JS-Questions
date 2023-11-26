@@ -1,0 +1,12 @@
+1. Monolith Architecture: All FE, BE, servies are in one application/project/one codebase.
+2. Microservices: A project is breaked in small small projects individually. Like UI is diff project, 
+BE is also breaked in small small services/projects, Log project, authentication project, etc.  
+Every project is running on diff ports.
+
+Benefits:
+1. Easy to test
+2. If anything in UI needs to be deployed, then only UI project re-deployment needs to be done. Where also
+in Monolith project, whole app needs to be redeployed
+3. It helps to get separation of concern.
+4. It helps to have different framework/tech stack in each services. Where as in Monolith, BE ll be in one tech stack, FE ll be one tech stack.
+
