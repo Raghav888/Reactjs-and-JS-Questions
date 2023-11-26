@@ -1,0 +1,32 @@
+1. From React Router DOM lib, we can also use createBroswerRoute() to create routing.
+https://reactrouter.com/en/main/routers/create-browser-router
+
+2. BroswerRouter: https://reactrouter.com/en/main/router-components/browser-router
+
+3.  Clinet side rendering-> dynamic content, user activity based content, seo problem, slow load
+ Server Side Rendering- CDN based, faster load, static content, better seo
+
+ We should combination of both in project.
+
+ 4. Client Side Routing- Routing handled on Client side, by loading diff component. (We do these)
+  Server Side Routing - While routing, pages comes from Server by making server call to get page.
+
+5. <Outlet /> -> Its a component from ReactRouterDom, It contain the  component to which current child route is targeted.
+Ex: If we want all component to between header and footer, then we can use this code in App.js
+
+<Header/>
+<Outlet/> -> So which ever component, the cuurent child routes target. ll be loaded here.
+<Footer/>
+
+https://reactrouter.com/en/main/components/outlet
+
+It wont load the parent route component. So we need to add the parent route also in children.
+
+6. We can nested routes using children property in Route tag of the parent route.  
+ 
+7. Dynamic Route: It means just having ids or any route param/queryparam in URL. 
+As we never know what ll be those values, so we cant hardcode it.
+
+8. useParam hook gives params in url. This hook is from react-router-dom.
+
+9. Object.values(objectVar) -> Its a JS function that gives an array of values of the object. 
