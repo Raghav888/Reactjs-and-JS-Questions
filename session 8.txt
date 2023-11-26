@@ -10,3 +10,16 @@ in Monolith project, whole app needs to be redeployed
 3. It helps to get separation of concern.
 4. It helps to have different framework/tech stack in each services. Where as in Monolith, BE ll be in one tech stack, FE ll be one tech stack.
 
+3. A shimmer UI is a version of the UI that doesn't contain actual content, but instead mimics the layout and shapes of the content that will eventually appear. 
+It uses a gradient animation that creates a shimmering effect over the placeholders, giving the user a sense of motion and progress.
+
+4. Js Statement => 
+let a=10;
+console.log(a),
+
+if else, etc.
+
+5. JS expression=> ternary opertaor, (a=10,console.log(a)), etc.
+
+In jsx, in curly bracket, js expression can only work, not js Statement.
+Thats why in {} in jsx, we cant use if else, but can use ternary operator.
