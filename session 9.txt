@@ -22,6 +22,11 @@ https://reactrouter.com/en/main/components/outlet
 
 It wont load the parent route component. So we need to add the parent route also in children.
 
+If its a nested route, then in the nested children will return in its parent outlet. So we need to add the outlet in every parent component.
+
+Good Practice: path="about"
+Bad Practice : path="/about"
+
 6. We can nested routes using children property in Route tag of the parent route.  
  
 7. Dynamic Route: It means just having ids or any route param/queryparam in URL. 

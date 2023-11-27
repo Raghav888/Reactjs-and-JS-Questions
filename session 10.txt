@@ -1,0 +1,13 @@
+1. Class based component
+
+class className extends React.Component {
+    render(){  // mandatory function in class based components.
+
+        retun <></> //jsx code
+    }
+}
+
+export default className  
+
+
+2. React lifecycle methods
