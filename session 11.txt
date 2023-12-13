@@ -1,0 +1,22 @@
+1. window has an event "online" and "offline"  that check user is online or offline.
+2. Always remove the event listner while unmounting method. and add event listner in mounting method.
+
+3. Chunking, Code splitting, dynamic bundling, lazy loading, on demand loading, dynamic import -> all are same things.  
+4. In system design interview add lazy loading, and reason why we need to add it.
+In lazy loading, it creates more than one bundle file as it will load the file of that code
+ when we want to show that component to user. In one single load all component wont be loaded. As lazy loaded component will be loaded on demand.
+
+5. For optimization, we can put the images on CDN, that will reduce image load time.
+
+6. const componentName = React.lazy(=>import ('./path to components'));
+ 
+7. Components that will be lazy loaded needs to be wrapped in <Suspense></Suspense> in route. Imported form react.
+Because that will make react know that this component will be lazy loaded and it will wait until it is loaded.
+Also it takes one prop fallback, we will send a shimmer through it. So until component is rendered that shimmer willbe shown to user.
+
+ <Suspense fallback={componentName}
+>
+<Component/>
+</Suspense>
+
+If we dont wrap it inside Suspense, it will give error in console and take user to error page through route.
