@@ -1,0 +1,16 @@
+1. We can multiple context but in redux we have single store.
+2. But the store in redux will be deivided in slices ex: user, theme, cart, etc.
+3. Redux flow=>   dispatch=> action=> reducer  => store/slice=> selector=> view
+4. We cannot directly modify store, we can do it by dispatch and action only.
+5. Selector=> it is used to read the redux store.
+6. redux tooklit is lib for store purpose whereas, react-redux lib is used to make connect or act as bridge between react and redux toolkit.
+7. Store is divided in Slice.
+8. useSelector hook is used to suscribe to redux store. It is imported from react-redux.
+
+useSelector(store=> store) // suscribes to whole store
+useSelector(store=> store.cart)// suscribes to only cart slice
+useSelector(store=> store.cart.items) // suscribes to only items state in cart slice. This is optimised way.
+Should only suscribe to required things not to whole store. Or it will rerender component when anything in store is updated.
+Important for interview question and optimization.
+
+Read about thunks, middle ware, RTK Query
