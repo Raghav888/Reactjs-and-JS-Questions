@@ -1,0 +1,2 @@
+Integration testing- Testing how our componentworks with other component.
+Difference between json and js object.
