@@ -1,0 +1,19 @@
+1. API polling- making BE calls in a particular interval to get data. Order of data is not fix. Ex: YTB Live Chat
+
+2. Web socket- A Bi-Directional call between UI and BE. BE send constiusly data when connection is made. Here is order of data is maintained
+Only in starting UI makes a BE call then connection is made then BE send continously data. Ex: Stock market website.
+
+3.In YTB, the ive chat, it keeps max 240 chats only nad delete it when it goes above it.
+
+4. useMemo hook caches the result between re-render. It means in rerender the value wont be lost.
+In every rerender all logic is re calculated like m  ultiplication, etc.
+But if the logic is n useMemo and rerenderhappens but its depenency array is not changed, it wont run the logic that inside useMemo.
+It is helpful optimization
+
+5. React rerendes everything when any state, prop changes. That causes optimixation issues as un necessary tings are also re-rendered.
+But such scenarios useMemo and useCallBcak hooks are useful. As they wont run in those rerender. They run only when there dependency array value is chnaged.
+
+6. useCallBcak caches the function not value
+
+7. useRef hook has a value that is not needed for rerendering. So basically rerendering doesnot happen when useRef value is changed.
+And also its value is not changed when re-rerendering happens. It maintains the state value in rerendering.
