@@ -1,0 +1,4 @@
+Inside Public Folder
+
+- manifest.json file is used for PWA- Progressive web applicatiom
+- robots.txt - used for SEO and search engine crawling (search negines sends spiders to find new content).
