@@ -15,3 +15,7 @@ That algo keeps the track of all files and hit reload when it find the changes.
 8. Transitive dependency- If one of the package that we are using has dependency on another package, we say that dependency as Transitive dependency
 
 9. broswerlist is the package that we can use to support our app in old versions of browsers.
+
+10. the "integrity" field is part of the package-lock.json or yarn.lock file, not the package.json itself. It is used in lock files to ensure that the exact package version you are installing is secure and hasn't been tampered with.
+
+The integrity value is a cryptographic hash (using algorithms like SHA-512) that verifies the contents of the package when it's downloaded. This guarantees that the package has not been altered since the time the lock file was created. If the package contents do not match the integrity hash, the package manager will refuse to install it.
